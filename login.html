@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://kit.fontawesome.com/2cb51aab6c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2cb51aab6c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <title>Keychron Final Project</title>
+</head>
+
+<body>
+    <div class="big-cart" id="big-cart2">
+        <div class="c-2" id="c-2" onclick="Change()"></div>
+        <div class="cart" id="c-cart">
+            <br>
+            <div class="head-cart">
+                <h1>Cart</h1>
+                <h5><i class="fa fa-times" aria-hidden="true" onclick="Change()"></i></h5>
+            </div>
+            <hr class="hr-cart">
+            <div id="mid">
+                <!-- <div class="detail-cart" id="detail-big">
+                <div class="left-cart">
+                    <div id="img-cart-add" class="img-add"></div>
+                </div>
+                <div class="right-cart" id="cart-right">
+                    <div id="detail-add" class="detail-add-cart">
+                        <p id="de-cart"></p>
+                        <p id="item-value"</p>
+                        <div class="price-cart-b">
+                            <div class="number-cart" id="num-box">
+                            </div>
+                            <span id="price-cart"></span>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            </div>
+            <hr class="hr-cart" id="line1">
+            <div class="sub-cart" id="sub1">
+                <input type="checkbox"><label>&nbsp; ฉันยอมรับข้อตกลงและเงื่อนไข ฯ</label>
+                <div class="sub-total">
+                    <h5><b>SUBTOTAL</b></h5>
+                    <h5 id="total"></h5>
+                </div>
+                <p>Shipping, taxes, and discounts codes calculated at checkout.</p>
+                <a href="login.html"><button class="checkout">check out</button></a>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="covidTxt">
+        <p>เนื่องจากสถานการณ์เเพร่ระบาดของโรค COVID-19 ส่งผลกระทบต่อการเดินทางขนส่งสินค้า
+            ทําให้การจัดส่งสินค้าถึงปลายทางล่าช้ากว่าปกติ</p>
+    </div>
+
+    <div class="nav-container">
+        <a href="index.html"> 
+            <div class="logo">
+                <img src="img/keychronlogo.png" alt="">
+            </div>
+        </a>
+        <div class="keyboards">
+            <button>Keyboard <i class="fas fa-chevron-down"></i></button>
+            <ul>
+                <li><a href="k2.html">Keychron K2</a></li>
+                <li><a href="k4.html">Keychron K4</a></li>
+                <li><a href="#">Keychron K2</a></li>
+                <li><a href="#">Keychron K4</a></li>
+            </ul>
+        </div>
+        <div class="slimKeyboards">
+            <button>Slim Keyboard <i class="fas fa-chevron-down"></i></button>
+            <ul>
+                <li><a href="#">K1 (TKL/FULLSIZE)</a></li>
+                <li><a href="#">K3 Version2 (75%)</a></li>
+                <li><a href="#">[NEW]Keychorn K7</a></li>
+            </ul>
+        </div>
+        <div class="accessories">
+            <button>Accessories <i class="fas fa-chevron-down"></i></button>
+            <ul>
+                <li><a href="#">OEM Retro Keycap Set</a></li>
+                <li><a href="#">XDA Retro Keycap Set</a></li>
+                <li><a href="#">Carrying Case</a></li>
+                <li><a href="#">Switch Puller</a></li>
+            </ul>
+        </div>
+        <div class="switch">
+            <button>Switches <i class="fas fa-chevron-down"></i></button>
+            <ul>
+                <li><a href="#">Gatheron Switch Set</a></li>
+                <li><a href="#">LPF Optical Switch</a></li>
+                <li><a href="#">Keychron K2</a></li>
+            </ul>
+        </div>
+        <button class="buy"><a href="buy.html">ช่องทางการสั่งซื้อ</a></button>
+        <div class="blog">
+            <button>Blogs <i class="fas fa-chevron-down"></i></button>
+            <ul>
+                <li><a href="">Promotion & News</a></li>
+                <li><a href="">Article</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="icons">
+            <a href="login.html"><i class="far fa-user" href="login.html"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#" onclick="On()"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+    <div class="kan">
+        <hr style="opacity: 0.125;">
+    </div>
+
+    <div class="loginSection">
+        <h1 class="longinTxt" style="text-align: center;">Login</h1>
+        <div class="form">
+            <label for="uname" class="hang txt"><b>EMAIL</b></label><br>
+            <input id="username" type="text" placeholder="" name="uname" required class="hang txtbox"><br>
+
+            <label for="psw" class="hang txt"><b>PASSWORD</b></label><br>
+            <input id="password" type="password" placeholder="" name="psw" required class="hang txtbox"><br>
+
+            <button type="submit" class="hang loginBtn" onclick="validate()">Sign In</button>
+            <br><br>
+            <input type="checkbox" checked="checked" name="remember" class="hang hang"> Remember me
+            <label for="createAcc" style="float: right">Create Account</label>
+            <br><br>
+            <!-- class="g-signin2" -->
+            <div class="googlewrap">
+                <div style="width: inherit" class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+            </div>
+            
+            <script>
+                function onSignIn(googleUser) {
+                    // Useful data for your client-side scripts:
+                    var profile = googleUser.getBasicProfile();
+                    console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+                    console.log('Full Name: ' + profile.getName());
+                    console.log('Given Name: ' + profile.getGivenName());
+                    console.log('Family Name: ' + profile.getFamilyName());
+                    console.log("Image URL: " + profile.getImageUrl());
+                    console.log("Email: " + profile.getEmail());
+            
+                    // The ID token you need to pass to your backend:
+                    var id_token = googleUser.getAuthResponse().id_token;
+                    console.log("ID Token: " + id_token);
+                }
+            </script>
+        </div>
+    </div>
+
+
+
+    <footer id="footer">
+        <div class="footer-content">
+            <!-- <img src="/img/logo.png" alt="" class="logo"> -->
+            <ul class="footer-menu">
+                <p class="txt-footer">MAIN MENU</p>
+                <li class="footer-menu-item">Keyboards</li>
+                <li class="footer-menu-item">Slim Keyboards</li>
+                <li class="footer-menu-item">Accessories</li>
+                <li class="footer-menu-item">Switches</li>
+                <a href="buy.html"><li class="footer-menu-item">ช่องทางสั่งซื้อ</li></a>
+                <li class="footer-menu-item">Blog</li>
+            </ul>
+            <ul class="footer-menu">
+                <p class="txt-footer">HELP & SUPPORT</p>
+                <li class="footer-menu-item">คําถามที่พบบ่อย</li>
+                <li class="footer-menu-item">คู่มือ</li>
+                <li class="footer-menu-item">ข้อกําหนดเเละเงือนไข</li>
+                <li class="footer-menu-item">Reseller</li>
+                <li class="footer-menu-item">Warranty</li>
+                <li class="footer-menu-item">Tracking</li>
+                <li class="footer-menu-item">Blogs</li>
+                <li class="footer-menu-item">รวมทุกหน้าบนเว็บไซต์</li>
+            </ul>
+            <ul class="footer-menu">
+                <p class="txt-footer">รับข้อมูลล่าสุด เเละ โปรโมชั่นพิเศษก่อนใคร</p>
+                <li class="footer-menu-item">ติดตามเพื่อรับ ข้อเสนอพิเศษ ของที่ระลึก ดีลสุดพิเศษ</li>
+                <input type="email" placeholder="💌 Enter your email : " class="input-email">
+            </ul>
+
+            <div class="socials">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+        </div>
+        <div class="footer-info">
+            <ul class="footer-info-items">
+                <li class="footer-info-item">Legal</li>
+                <li class="footer-info-item">Privacy</li>
+                <li class="footer-info-item">Policy</li>
+                <li class="footer-info-item">Cookies</li>
+                <li class="footer-info-item">Advertisement</li>
+
+            </ul>
+            <div class="rights">
+                <div class="country">
+                    <li>Thailand (TH)</li>
+                    <li>Copyright Webtech 2021⭐</li>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+<script>
+    function validate() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username.length < 5) {
+            alert("Please enter email correctly");
+        }
+        if (password.length < 5) {
+            alert("Please enter password correctly");
+        }
+        console.log(username);
+    }
+</script>
+<script src="js/main.js"></script>
+</html>

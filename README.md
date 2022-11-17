@@ -1,2 +1,4 @@
-# Keychorn-clone
-Keychron clone website (Pure html, css, javascript)
+# Keychron-clone-website
+Keychron.com clone with HTML, CSS, Javascript
+
+visalcoolcool

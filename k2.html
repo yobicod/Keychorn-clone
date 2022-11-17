@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Keychron K2</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/k2.css">
+    <!-- <link rel="stylesheet" href="test-nav.css"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="big-cart" id="big-cart2">
+        <div class="c-2" id="c-2" onclick="Change()"></div>
+        <div class="cart" id="c-cart">
+            <br>
+            <div class="head-cart">
+                <h1>Cart</h1>
+                <h5><i class="fa fa-times" aria-hidden="true" onclick="Change()"></i></h5>
+            </div>
+            <hr class="hr-cart">
+            <div id="mid">
+                <!-- <div class="detail-cart" id="detail-big">
+                <div class="left-cart">
+                    <div id="img-cart-add" class="img-add"></div>
+                </div>
+                <div class="right-cart" id="cart-right">
+                    <div id="detail-add" class="detail-add-cart">
+                        <p id="de-cart"></p>
+                        <p id="item-value"</p>
+                        <div class="price-cart-b">
+                            <div class="number-cart" id="num-box">
+                            </div>
+                            <span id="price-cart"></span>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            </div>
+            <hr class="hr-cart" id="line1">
+            <div class="sub-cart" id="sub1">
+                <input type="checkbox"><label>&nbsp; ฉันยอมรับข้อตกลงและเงื่อนไข ฯ</label>
+                <div class="sub-total">
+                    <h5><b>SUBTOTAL</b></h5>
+                    <h5 id="total"></h5>
+                </div>
+                <p>Shipping, taxes, and discounts codes calculated at checkout.</p>
+                <a href="login.html"><button class="checkout">check out</button></a>
+            </div>
+            <br>
+        </div>
+    </div>
+    <div class="covidTxt">
+        <p>เนื่องจากสถานการณ์เเพร่ระบาดของโรค COVID-19 ส่งผลกระทบต่อการเดินทางขนส่งสินค้า
+            ทําให้การจัดส่งสินค้าถึงปลายทางล่าช้ากว่าปกติ
+        </p>
+    </div>
+    <div class="nav-container">
+        <a href="index.html"> 
+            <div class="logo">
+                <img src="img/keychronlogo.png" alt="">
+            </div>
+        </a>
+        <div class="keyboards">
+            <button>Keyboard <i class="fas fa-chevron-down"></i></button>
+            <ul>
+                <li><a href="k2.html">Keychron K2</a></li>
+                <li><a href="k4.html">Keychron K4</a></li>
+                <li><a href="#">Keychron K6</a></li>
+                <li><a href="#">Keychron K8</a></li>
+            </ul>
+        </div>
+        <div class="slimKeyboards">
+            <button>Slim Keyboard <i class="fas fa-chevron-down"></i></button>
+            <ul>
+                <li><a href="#">K1 (TKL/FULLSIZE)</a></li>
+                <li><a href="#">K3 Version2 (75%)</a></li>
+                <li><a href="#">[NEW]Keychorn K7</a></li>
+            </ul>
+        </div>
+        <div class="accessories">
+            <button>Accessories <i class="fas fa-chevron-down"></i></button>
+            <ul>
+                <li><a href="#">OEM Retro Keycap Set</a></li>
+                <li><a href="#">XDA Retro Keycap Set</a></li>
+                <li><a href="#">Carrying Case</a></li>
+                <li><a href="#">Switch Puller</a></li>
+            </ul>
+        </div>
+        <div class="switch">
+            <button>Switches <i class="fas fa-chevron-down"></i></button>
+            <ul>
+                <li><a href="#">Gatheron Switch Set</a></li>
+                <li><a href="#">LPF Optical Switch</a></li>
+                <li><a href="#">Keychron K2</a></li>
+            </ul>
+        </div>
+        <button class="buy"><a href="buy.html">ช่องทางการสั่งซื้อ</a></button>
+        <div class="blog">
+            <button>Blogs <i class="fas fa-chevron-down"></i></button>
+            <ul>
+                <li><a href="">Promotion & News</a></li>
+                <li><a href="">Article</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="icons">
+            <a href="login.html"><i class="far fa-user" href="login.html"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#" onclick="On()"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+    <div class="kan">
+        <hr style="opacity: 0.125;">
+    </div>
+    <div class="b-box">
+        <div class="pic">
+            <div class="li">
+                <div class="d active" id="demo"><img class="small-img" src="img/k2-01.png"></div>
+                <div class="d" id="demo"><img class="small-img" src="img/k2-blue-black.png"></div>
+                <div class="d" id="demo"><img class="small-img" src="img/k2-brown.png"></div>
+                <div class="d" id="demo"><img class="small-img" src="img/k2-red.png"></div>
+                <div class="d" id="demo"><img class="small-img" src="img/k2-bblue.png"></div>
+            </div>
+            <ul><img src="img/k2-01.png" id="Product"></ul>
+        </div>
+        <div class="detail">
+            <h2>Keychron K2 V.2 Wireless Hot-swappable Mechanical Keyboard
+            </h2>
+            <span id="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i></span>
+            <span> 69 รีวิว</span>
+            <h4>3,890.00 &#3647;</h2>
+                <h7>Tax included.
+            </h4>
+            <hr>
+            <div class="btn-ver">
+                <div class="ver">
+                    <h6>รุ่นสี</h6>
+                    <label class="click"><input checked="checked" type="radio" name="group-1" value="RGB Backlight Aluminum
+                        Frame
+                        Hot-Swappable - Dark Grey"><span>RGB Backlight Aluminum Frame Hot-Swappable - Dark
+                            Grey</span></label>
+                    <label class="click"><input type="radio" name="group-1" value="RGB Backlight Aluminum
+                        Frame
+                        Hot-Swappable - Light Grey"><span>RGB Backlight Aluminum Frame Hot-Swappable - Light
+                            Grey</span></label>
+                </div>
+                <div class="switch-1">
+                    <h6>สวิตซ์</h6>
+                    <label class="click"><input type="radio" checked="checked" name="group-2" value="Gateron Red
+                        Switch"><span>Gateron Red
+                        Switch</span></label>
+                    <label class="click"><input type="radio" name="group-2" value="Gateron Blue
+                        Switch"><span>Gateron Blue
+                            Switch</span></label><br>
+                    <label class="click"><input type="radio" name="group-2" value="Gateron Brown
+                        Switch"><span>Gateron Brown
+                            Switch</span></label>
+                </div>
+                <div class="lang">
+                    <h6>ภาษาคีย์บอร์ด</h6>
+                    <label class="click"><input checked="checked" type="radio" name="group-3"
+                            value="ภาษาอังกฤษ"><span>ภาษาอังกฤษ</span></label>
+                    <label class="click"><input type="radio" name="group-3" value="ภาษาไทย"><span>ภาษาไทย</span></label>
+                </div>
+                <h6>QUANTITY</h6>
+                <div class="number">
+                    <span class="minus">-</span>
+                    <input class="quan" type="text" value="1" />
+                    <span class="plus">+</span>
+                </div><br>
+                <div>
+                    <button onclick="cart()" type="button" class="sold" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    Add to cart
+                </button>
+                <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <b>
+                                        <h5 class="modal-title" id="staticBackdropLabel">เนื่องจากสินค้าเป็นที่ต้องการของตลาดเป็นจํานวนมาก</h5>
+                                    </b>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>ไม่สามารถสั่งซื้อสินค้าได้ เนื่องจากขณะนี้สินค้ามีจํานวนจํากัด</h6>
+                                    <br>
+                                    <p>ทาง Keychron Thailand ขอจํากัดการซื้อสินค้าท่านละ 1 ชิ้น เพื่อเป็นการกระจายสินค้าให้ทั่วถึงเเละขอความร่วมมือทุกท่าน
+                                        ไม่สนับสนุน - ซือสินค้าจาก ร้านค้า/ผู้ขาย ที่จําหน่ายเกินราคา
+                                    </p>
+                                    <p>• Keychron K2 V.2 Wireless Hot-swappable Mechanical Keyboard: <b>สามารถสั่งได้ไม่เกิน 1 ชิ้น</b></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="wrap-modalfooter">
+                                        <p>Keychron Thailand</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    <br><br><br>
+                </div>
+                <hr>
+                <div class="face-tweet">
+                    <br>
+                    <span><i class="fab fa-facebook-f"></i> Share </span>
+                    <span><i class="fab fa-twitter"></i> Tweet</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-2">
+        <div class="video-1">
+            <iframe width="80%" height="760px" style="margin-top: 40px;"
+                src="https://www.youtube.com/embed/jfT_qg2wL74?start=0&autoplay=1&loop=0&mute=0&controls=0&enablejsapi=1"></iframe>
+        </div>
+        <div class="detail-video">
+            <p>KEYCHRON K2 (Hot-Swappable): </p>
+            <p>การผสมผสานที่ลงตัวของคีย์บอร์ด</p>
+            <p>คอมแพ็ค + TENKEYLESS</p>
+        </div>
+    </div>
+    <div class="block-3">
+        <p>Keychron K2 เป็นคีย์บอร์ดที่รองรับทั้งการใช้งานแบบไร้สาย (Bluetooth) และแบบใช้สาย (Type-C</p>
+        <p>Cable) ออกแบบมาเพื่อประสบการณ์การพิมพ์ที่เหนือระดับ ครบครันทั้งปุ่มอักษรและปุ่มฟังก์ชั่นทั้งหมดที่คุณ</p>
+        <p>ต้องการ K2 ถูกออกแบบมาในขนาดที่กะทัดรัดแต่สามารถบรรจุแบตเตอรี่ขนาดใหญ่ที่หาไม่ได้ใน Mechanical</p>
+        <p>Keyboard ทั่วไป มาพร้อมกับฟังก์ชัน Hot-Swapping ที่ทำให้คุณสามารถปรับแต่งประสบการณ์ได้ตาม</p>
+        <p>ต้องการ</p>
+        <div class="inbox-3">
+            <p style="margin-bottom: 40px; font-weight: bold;">มีอะไรใหม่ ใน K2v2 ?</p>
+            <p>Bluetooth 5.1</p>
+            <p>Inclined bottom frame</p>
+            <p>Dedicated caps lock backlight</p>
+            <p>Hot-Swappable</p>
+        </div>
+        <div class="hot-swap">
+            <div class="swap-left">
+                <img class="swap-pic" src="img/change-switch.jpg">
+            </div>
+            <div class="swap-right">
+                <h1 style="margin-bottom: 20px;">Hot-Swappable</h1>
+                <span>Keychron K2 สามารถถอดและเปลี่ยน
+                    สวิตช์ได้โดยที่ไม่ต้องบัดกรี (Soldering)
+                    เพียงแค่ถอดสวิตช์ที่จะเปลี่ยนออกแล้วใส่
+                    สวิตช์ใหม่ลงไปให้เข้าล็อก เพียงเท่านี้ก็
+                    สามารถใช้งานต่อได้ในทันที Keychron K2
+                    จึงทำให้ผู้ใช้งานสามารถเลือกผสมสวิตช์รูป
+                    แบบต่าง ๆ ได้ง่าย สะดวก รวดเร็ว และปรับ
+                    แต่งคีย์บอร์ดได้ตามความต้องการ</span>
+            </div>
+            <div class="pic-video">
+                <iframe width="100%" height="600px"
+                    src="https://www.youtube.com/embed/muN2ePCRci4?start=0&autoplay=0&loop=1&playlist=muN2ePCRci4&mute=0&controls=0&enablejsapi=1"></iframe>
+            </div>
+        </div>
+        <img class="swap-pic" id="p1" src="img/kb.jpg">
+        <img class="swap-pic" id="p1" src="img/blue.jpg">
+        <div class="hot-swap" id="hot-2">
+            <div class="swap-left">
+                <img class="swap-pic" src="img/typegif.gif">
+            </div>
+            <div class="swap-right">
+                <h1 style="margin-bottom: 20px;"><b>เชื่อมต่อไร้สาย และ USB - C</b></h1>
+                <span>Keychron K2 สามารถใช้ได้ทั้งรูปแบบ
+                    Bluetooth หรือ USB-C เชื่อมต่อ Iphone
+                    Ipad และ Laptop ของคุณได้แบบไร้สาย
+                    สูงสุด 3 อุปกรณ์พร้อมกัน สลับเครื่องแค่กด
+                    ปุ่ม Fn + 1/2/3 และยังสามารถใช้ USB-C
+                    เพื่อเชื่อมต่อ K2 กับอุปกรณ์ของคุณได้เช่น
+                    กัน</span>
+            </div>
+            <div class="text-left" id="change-1">
+                <h1>สัมผัสแรงกดที่คุณ</h1>
+                <h1 style="margin-bottom: 20px;">เลือกได้</h1>
+                <span>Keychron K2ออกแบบมาเพื่อให้เหมาะกับสไตล์การพิมพ์ในแบบของคุณ
+                    ไม่ว่าคุณจะชอบแบบ Linear หรือ Clicky หรือ Tactile เรามีสวิตช์
+                    Gateron ให้เลือกถึง3 ตัวเลือก ( Blue , Red , Brown)
+                    ด้วยอายุการใช้งานถึง 50 ล้านครั้ง</span>
+            </div>
+            <div class="pic-right" id="change-1">
+                <img class="swap-pic" src="img/switch.jpg">
+            </div>
+        </div>
+        <img class="swap-pic" id="p2" src="img/slope.jpg">
+        <h4>กรอบด้านล่างที่มีความลาดเอียงทำให้ K2 พิมพ์ได้สะดวกสบายยิ่งขึ้น</h4>
+        <div class="hot-swap" id="hot-3">
+            <img src="img/ver1.jpg" class="ver1">
+            <img src="img/ver2.jpg" class="ver2">
+            <span id="compare" style="font-weight: bold;">เปรียบเทียบ K2 V.1
+                และ K2 V.2
+            </span>
+            <div class="swap-left" id="layout">
+                <img class="swap-pic" src="img/layout.jpg">
+            </div>
+            <div class="swap-right" id="change-2">
+                <span style="font-weight: bold; font-size: 40px;">รองรับ<br>หลากหลายอุปกรณ์<br></span>
+                <span>สามารถใช้ได้กับทุกระบบปฏิบัติการ ไม่ว่าจะเป็นระบบ Mac,Android, ios
+                    หรือ Windows K2 เป็นหนึ่งใน Mechanical Keyboard ที่มีปุ่มฟังก์ชัน Mac Layout
+                    และยังสามารถใช้คีย์ฟังก์ชันเดียวกันกับ Layout อื่นๆ ได้เหมือน macOS ทั่วไป
+                    คีย์บอร์ด K2 ทุกอันมาพร้อมกับปุ่มกดเฉพาะ 3 ปุ่มสำหรับ Mac และ Windows
+                    ตามลำดับ</span>
+            </div>
+            <div class="text-left-2">
+                <span style="font-weight: bold; font-size: 40px;">เต็มไปด้วยประสิทธิภาพ</span><br>
+                <span>K2’s 84 key ถูกออกแบบให้มีปุ่มฟังก์ชั่นที่จำเป็นทั้งหมด เช่น การเลื่อนหน้าขึ้น / ลง
+                    (Page Up/Down) , Home , Screen capture (cmd + shift + 4)
+                    ซึ่งมีความสำคัญต่อประสิทธิภาพการทำงาน และด้วย N-key rollover
+                    (NKRO ในโหมดแบบใช้สายเท่านั้น) คุณสามารถกดปุ่มได้มากเท่าที่คุณกดได้โดยไม่มีพลาด</span>
+            </div>
+            <div class="pic-right" id="change-3">
+                <img class="swap-pic" src="img/side.png">
+            </div>
+            <img src="img/battery.png" class="ver1" id="bat-1">
+            <img src="img/kb-bat.jpg" class="ver2" id="bat-2"><br><br><br>
+            <span id="text-bat" style="font-weight: bold; font-size: 40px;">แบตเตอรี่ที่ยาวนาน</span><br>
+            <p id="text-bat">K2 สามารถพิมพ์ได้นานถึง 72 ชั่วโมงหรือใช้งานได้สูงสุด 9 วัน
+                (8 ชั่วโมง / วัน) ด้วยแบตเตอรี่ขนาดใหญ่ 4000 mAh</p>
+        </div>
+        <div class="hot-swap" id="hot-4">
+            <div class="pic-video-3">
+                <iframe width="100%" height="600px"
+                    src="https://www.youtube.com/embed/PSuK9WKv3ZE?start=0&autoplay=0&loop=0&mute=0&controls=0&enablejsapi=1"></iframe>
+            </div>
+            <span id="rgb" style="font-weight: bold; font-size: 40px;">18 TYPES OF RGB</span><br>
+            <p id="rgb">แสง RGB มากกว่า 15 ชนิดและมาพร้อมกับสไตล์ที่แตกต่าง
+                (กระพริบ หายใจหรือคงที่ ฯลฯ ) เข้ากับทุกอารมณ์ของคุณ
+                เพียงกดปุ่มหลอดไฟหรือลูกศร fn + ขวาเพื่อเปลี่ยนรูปแบบ RGB</p><br>
+            <span id="rgb" style="font-weight: bold; font-size: 40px;">รีวิว โดย MKBHD และสื่อชั้นนำทั่วโลก</span>
+            <div class="pic-video-3" id="vid-4">
+                <iframe width="100%" height="600px"
+                    src="https://www.youtube.com/embed/pgmHkfvGYnY?start=428&end=507&autoplay=0&loop=0&mute=0&controls=0&enablejsapi=1"></iframe>
+            </div>
+        </div>
+        <img class="swap-pic" id="p3" src="img/tnw-sm.jpg"><br>
+        <span>“It stands out from the crowd with its design.”</span><br><br>
+        <img class="swap-pic" style="width: 20%;" src="img/mk.png"><br>
+        <span>“I had a very specific set of needs: Wireless. Arrow keys.
+            No<br> numpad. Mac compatible. Backlit. Found this Keychron K2.”
+        </span>
+        <div class="hot-swap" id="hot-5">
+            <div class="left">
+                <img src="img/idb.jpg" id="idb"><br>
+                <span>“K2 brings that particular clickety-clack experience
+                    and tactile switches to your Apple universe”
+                </span><br>
+                <img src="img/mac.jpg" id="mac"><br><br><br><br><br><br><br>
+                <span>“ Keychron K2 is the only mechanical keyboard you
+                    should get for iPad.”</span>
+            </div>
+            <div class="right">
+                <img src="img/apple.jpg" id="apple"><br><br><br><br>
+                <span>“K2 mechanical keyboard is a delight to
+                    type on and a joy to look at”
+                </span><br>
+                <img src="img/android.jpg" id="android"><br>
+                <span id="android-text">“If you’re on the hunt for a Bluetooth
+                    keyboard that looks really cool and pairs with a variety of
+                    operating systems, start here.”</span>
+            </div>
+            <span id="text-bottom">เปรียบเทียบความแตกต่างของแต่ละรุ่น <a href="#"
+                    style="color: black;">Here</a></span><br>
+            <hr class="new">
+        </div>
+        <div class="hot-swap" id="hot-6">
+            <table class="table table-borderless" id="table-1">
+                <thead class="thead-light">
+                    <tr class="table-header">
+                        <th scope="col">SPECIFICATION</th>
+                        <th scope="col">CONNECTIVITY AND POWER</th>
+                        <th scope="col">PHYSICAL UNIT</th>
+                        <th scope="col">CODE NAME</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-text">
+                        <td><span>Number of Keys: 84 keys
+                                <br>Switches: Gateron blue/red/brown<br>Number of Multimedia Keys: 12<br>Main Body
+                                Material (C Series): Aluminum bezels and ABS bottom frame
+                                <br>Keycap Material: ABS<br></span></th>
+                        <td><span>Backlit Types: 18
+                                <br>Backlit: Adjustable 4-level RGB backlit
+                                <br>System: Windows/Android/Mac/iOS
+                                <br>Battery: 4000mAh Rechargeable li-polymer battery
+                                <br>BT Working Time (RGB): Up to 72 hours (Lab test result may vary by actual use)
+                                <br>Charging Time: Around 3 hours
+                                <br>Connection: Bluetooth and Type-C cable
+                                <br>Bluetooth version: 5.1 <br>Bluetooth Device Name: Keychron K2
+                                <br>Compatible System: macOS/Windows/<br></span></td>
+                        <td><span>Dimension (Aluminum bezels version): 317 x 129 x 38.5mm
+                                <br>Weight: About 794g / 28oz
+                                <br>Operating Environment: -10 to 50℃
+                                <br>
+                                <br><span style="font-weight: bold;">PACKAGE CONTENT</span>
+                                <br>
+                                <br>1 x Keyboard
+                                <br>1 x USB-A to USB Type-C Cable
+                                <br>1 x Keycap Puller
+                                <br>1 x User Manual
+                                <br>Firmware HERE<br></span></td>
+                        <td><span>C1 - RGB Backlit Aluminum Red Switch
+                                <br>C2 - RGB Backlit Aluminum Blue Switch
+                                <br>C3 - RGB Backlit Aluminum Brown Switch<br></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <!-- <img src="/img/logo.png" alt="" class="logo"> -->
+            <ul class="footer-menu">
+                <p class="txt-footer">MAIN MENU</p>
+                <li class="footer-menu-item">Keyboards</li>
+                <li class="footer-menu-item">Slim Keyboards</li>
+                <li class="footer-menu-item">Accessories</li>
+                <li class="footer-menu-item">Switches</li>
+                <a href="buy.html"><li class="footer-menu-item">ช่องทางสั่งซื้อ</li></a>
+                <li class="footer-menu-item">Blog</li>
+            </ul>
+            <ul class="footer-menu">
+                <p class="txt-footer">HELP & SUPPORT</p>
+                <li class="footer-menu-item">คําถามที่พบบ่อย</li>
+                <li class="footer-menu-item">คู่มือ</li>
+                <li class="footer-menu-item">ข้อกําหนดเเละเงือนไข</li>
+                <li class="footer-menu-item">Reseller</li>
+                <li class="footer-menu-item">Warranty</li>
+                <li class="footer-menu-item">Tracking</li>
+                <li class="footer-menu-item">Blogs</li>
+                <li class="footer-menu-item">รวมทุกหน้าบนเว็บไซต์</li>
+            </ul>
+            <ul class="footer-menu">
+                <p class="txt-footer">รับข้อมูลล่าสุด เเละ โปรโมชั่นพิเศษก่อนใคร</p>
+                <li class="footer-menu-item">ติดตามเพื่อรับ ข้อเสนอพิเศษ ของที่ระลึก ดีลสุดพิเศษ</li>
+                <input type="email" placeholder="💌 Enter your email : " class="input-email">
+            </ul>
+
+            <div class="socials">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+        </div>
+
+        <center>
+            <div class="legal-footer">
+                <img class="legal-foot" src="img/lastfooter.png" alt="">
+            </div>
+        </center>
+    </footer>
+</body>
+<script>
+    var Product = document.getElementById("Product");
+    var small = document.getElementsByClassName("small-img");
+    var demo = document.querySelectorAll(".d");
+    for (let i = 0; i <= 4; i++) {
+            small[i].onclick = function () {
+                Product.src = small[i].src;
+            }
+        }
+    function box() {
+        demo.forEach(demo => demo.classList.remove('active'));
+        this.classList.add('active');
+    }
+    demo.forEach(demo => demo.addEventListener('click', box));
+    // for (let i = 0; i <= 4; i++) {
+    //     small[i].onclick = function () {
+    //         Product.src = small[i].src;
+    //     }
+    // }
+    var num_item = 1;
+    var price_total = 3890;
+    let boxx = 0;
+    var numt =  0;
+    $(document).ready(function () {
+        $('.minus').click(function () {
+            var $input = $(this).parent().find('input');
+            var count = parseInt($input.val()) - 1;
+            count = count < 1 ? 1 : count;
+            num_item -= 1;
+            if (num_item <= 0) {
+                num_item = 1;
+            }
+            $input.val(count);
+            $input.change();
+            return false;
+        });
+        $('.plus').click(function () {
+            var $input = $(this).parent().find('input');
+            $input.val(parseInt($input.val()) + 1);
+            $input.change();
+            num_item += 1;
+            return false;
+        });
+    });
+
+    function On() {
+        var x = document.getElementById("c-cart");
+        var y = document.getElementById("c-2");
+        x.classList.add("animate-cart");
+        y.classList.add("go-left");
+        x.classList.remove("move-out-right");
+        y.classList.remove("move-out-left");
+    }
+    function cart() {
+        // slideeeeeeeeeeeeeeeeeeeeeeeeeeeee //
+        var x = document.getElementById("c-cart");
+        var y = document.getElementById("c-2");
+        x.classList.add("animate-cart");
+        y.classList.add("go-left");
+        x.classList.remove("move-out-right");
+        y.classList.remove("move-out-left");
+        // close - slideeeeeeeeeeeeeeeeeeeeeeeeeeeee //
+        var text = document.createTextNode("Keychron K2 V.2 Wireless Hot-swappable Mechanical Keyboard");
+        var g1 = document.getElementsByName('group-1');
+        var g2 = document.getElementsByName('group-2');
+        var g3 = document.getElementsByName('group-3');
+        var mid = document.getElementById("mid");
+        var br = document.createElement("br");
+        var hr = document.createElement("hr");
+        var big_box = document.createElement("div");
+
+        big_box.classList.add("detail-cart");
+        big_box.id = "detail-big";
+        mid.appendChild(big_box);
+        // create box inner right-cart //
+        var div_detail = document.createElement("div");
+        var div_price = document.createElement("div");
+        var div_input = document.createElement("div");
+        var ptag = document.createElement("h5");
+        var ptag2 = document.createElement("p");
+        var price = document.createElement("span");
+        var big_right = document.createElement("div");
+        big_right.classList.add("right-cart");
+        big_right.id = "cart-right";
+        big_right.appendChild(div_detail);
+        ptag.id = "de-cart";
+        price.id = "price-cart";
+        ptag2.id = "item-value"
+        ptag.appendChild(text);
+        div_detail.classList.add("detail-add-cart");
+        div_detail.id = "detail-add";
+        div_price.classList.add("price-cart-b");
+        div_input.classList.add("number-cart")
+        div_input.id = "num-box";
+        div_price.appendChild(div_input);
+        div_price.appendChild(price);
+        div_detail.appendChild(ptag);
+        div_detail.appendChild(ptag2);
+        div_detail.appendChild(div_price);
+        div_detail.appendChild(br);
+        //
+        // create box inner right-cart //
+        for (var i = 0; i < g1.length; i++) {
+            if (g1[i].checked) {
+                var text = g1[i].value;
+                var t = document.createTextNode(text+" / ");
+                ptag2.appendChild(t);
+            }
+        }
+        for (var i = 0; i < g2.length; i++) {
+            if (g2[i].checked) {
+                var text = g2[i].value;
+                var t = document.createTextNode(text+" / ");
+                ptag2.appendChild(t);
+            }
+        }
+        for (var i = 0; i < g3.length; i++) {
+            if (g3[i].checked) {
+                var text = g3[i].value;
+                var t = document.createTextNode(text);
+                ptag2.appendChild(t);
+            }
+        }
+        // ---------------------cal---------------------- //
+        // $(document).ready(function () {
+        //     $('.num2').prop('disabled', true);
+        //     $(document).on('click', '.plux', function () {
+        //         $('.num2').val(parseInt($('.num2').val()) + 1);
+        //     });
+        //     $(document).on('click', '.min', function () {
+        //         $('.num2').val(parseInt($('.num2').val()) - 1);
+        //         if ($('.num2').val() == 0) {
+        //             $('.num2').val(1);
+        //             big_box.remove();
+        //         }
+        //     });
+        // });
+
+
+        //--------------------ทำปุ่มเพิ่มของ--------------------//
+        var oper1 = document.createElement("span");
+        var oper2 = document.createElement("span");
+        var amount = document.createElement("span");
+        var pp = document.createTextNode("+");
+        var mm = document.createTextNode("-");
+        oper1.classList.add("min");
+        oper2.classList.add("plux");
+        amount.classList.add("num2");
+        // amount.type = "text";
+        // amount.value = num_item;
+        amount.innerHTML = num_item;
+        amount.id = "amount";
+        oper1.appendChild(mm);
+        oper2.appendChild(pp);
+        div_input.appendChild(oper1);
+        div_input.appendChild(amount);
+        div_input.appendChild(oper2);
+        //--------------------ทำปุ่มเพิ่มของ--------------------//
+        // -------------------------------cal----------------------- //
+        boxx += num_item * price_total;
+        var total = document.getElementById("total");
+        total.innerHTML = boxx + ".00 &#3647";
+        numt += num_item;
+        var l1 = document.getElementById("line1");
+        var sub = document.getElementById("sub1")
+        $(document).ready(function () {
+            oper1.onclick = function() {
+                var num = amount.innerHTML;
+                num -= 1;
+                numt -= 1;
+                boxx -= 3890;
+                if ((numt <= 0) || (num <= 0 )) {
+                    big_box.remove();
+                }
+                else if(numt == 0){
+                    boxx = 0;
+                }
+                amount.innerHTML = num;
+
+                total.innerHTML = boxx + ".00 &#3647";
+            };
+            oper2.onclick = function() {
+                var num = parseInt(amount.innerHTML);
+                num += 1;
+                numt += 1;
+                boxx += 3890;
+                amount.innerHTML = num;
+                total.innerHTML = boxx + ".00 &#3647";
+
+            };
+        });
+        // $(document).ready(function () {
+        //     $('.min').click(function () {
+        //         var $input = $(this).parent().find('input');
+        //         var num = parseInt($input.val()) - 1;
+
+        //         numt -= 1;
+        //         boxx -= 3890;
+        //         if ((numt <= 0) || (num <= 0 )) {
+        //             big_box.remove();
+        //         }
+        //         else if(numt == 0){
+        //             boxx = 0;
+        //         }
+        //         $input.val(num);
+
+        //         total.innerHTML = boxx + ".00 &#3647" +numt;
+        //     });
+        //     $('.plux').click(function () {
+        //         var $input = $(this).parent().find('input');
+        //         var num = parseInt($input.val()) + 1;
+        //         numt += 1;
+        //         $input.val(num);
+
+        //         boxx += 3890;
+        //         total.innerHTML = boxx + ".00 &#3647";
+
+        //     });
+        // });
+        // --------------------------------close cal -------------------------- //
+        
+        var p_price = document.createTextNode("3,890.00 ฿");
+        price.appendChild(p_price);
+
+        // ----------------------pic-------------------- //
+
+        var cart_left = document.createElement("div");
+        cart_left.classList.add("left-cart");
+        var pic = document.createElement("div");
+        pic.classList.add("img-add");
+        pic.id = "img-cart-add";
+        cart_left.appendChild(pic);
+        // var pic = document.getElementById("img-cart-add");
+        var ele = document.createElement("img");
+        if (g1[0].checked && g2[0].checked) {
+            ele.src = "img/k2-red.png";
+            pic.appendChild(ele);
+        }
+        else if (g1[0].checked && g2[1].checked) {
+            ele.src = "img/k2-blue-black.png";
+            pic.appendChild(ele);
+        }
+        else if (g1[0].checked && g2[2].checked) {
+            ele.src = "img/k2-brown.png";
+            pic.appendChild(ele);
+        }
+        else if (g1[1].checked && g2[0].checked) {
+            ele.src = "img/red-li.jpg";
+            pic.appendChild(ele);
+        }
+        else if (g1[1].checked && g2[1].checked) {
+            ele.src = "img/k2-bblue.png";
+            pic.appendChild(ele);
+        }
+        else if (g1[1].checked && g2[2].checked) {
+            ele.src = "img/brown-li.jpg";
+            pic.appendChild(ele);
+        }
+        big_box.appendChild(cart_left);
+        big_box.appendChild(big_right);
+
+    }
+    function Change() {
+        var x = document.getElementById("c-cart");
+        var y = document.getElementById("c-2");
+        x.classList.add("move-out-right");
+        y.classList.add("move-out-left");
+        x.classList.remove("animate-cart");
+        y.classList.remove("go-left");
+    }
+</script>
+
+</html>
